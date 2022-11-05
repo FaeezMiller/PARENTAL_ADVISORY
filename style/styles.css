@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+:root {
+  --scale: 10px;
+  --width: calc(37 * var(--scale));
+  --height: calc(25 * var(--scale));
+  --middle-height: calc(0.41 * var(--height));
+  --sides-height: calc(0.295 * var(--height));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  overflow: hidden;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: var(--width);
+  height: var(--height);
+  box-shadow: 0px 0px 0px 3px #fff, 0px 0px 0px 10px #000, 0px 0px 0px 12px #444;
+  user-select: none;
+  bakcground: #fff;
+}
+
+.label-top {
+  width: 100%;
+  height: var(--sides-height);
+  padding-left: 18px;
+  line-height: var(--sides-height);
+  background: #000;
+  text-align: center;
+}
+.label-top-text {
+  color: #fff;
+  font-size: calc(0.20 * var(--height));
+  letter-spacing: 20px;
+  font-weight: 700;
+  font-family: 'Open Sans Condensed', sans-serif;
+  white-space: nowrap;
+}
+
+.label-middle {
+  width: 100%;
+  height: var(--middle-height);
+  padding-top: 2px;
+  padding-left: 2px;
+  line-height: var(--middle-height);
+  background: #fff;
+  text-align: center;
+}
+.label-middle-text {
+  color: #000;
+  font-size: 80px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-family: 'Roboto Condensed', sans-serif;
+  transform: scaleY(1.4);
+  white-space: nowrap;
+}
+
+.label-bottom {
+  position: relative;
+  width: 100%;
+  height: var(--sides-height);
+  line-height: var(--sides-height);
+  background: #000;
+  text-align: center;
+}
+.label-bottom-text {
+  position: absolute;
+  left: -33px;
+  top: -1px;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 40px;
+  letter-spacing: 10px;
+  white-space: nowrap;
+  transform: scaleX(0.8) scaleY(1.4);
+}
+
+.s1mpson {
+  --background-color: #fff;
+  --icon-color: #111;
+}
